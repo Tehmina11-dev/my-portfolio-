@@ -36,11 +36,11 @@ export function Skills() {
               whileHover={{ y: -6 }}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40 hover:shadow-card"
             >
-              {/* Hover gradient sheen */}
-              <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-primary/0 to-accent/0 opacity-0 transition-opacity duration-500 group-hover:from-primary/5 group-hover:to-accent/5 group-hover:opacity-100" />
+              {/* Hover accent tint */}
+              <div className="pointer-events-none absolute inset-0 -z-10 bg-primary/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
               <div className="mb-5 flex items-center gap-3">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <CategoryIcon className="h-6 w-6" />
                 </span>
                 <div>

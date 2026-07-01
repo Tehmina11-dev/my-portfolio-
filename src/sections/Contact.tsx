@@ -88,7 +88,7 @@ export function Contact() {
               {contactInfo.map(({ icon: Icon, label, value, href }) => {
                 const content = (
                   <div className="flex items-center gap-3 rounded-xl border border-border bg-background/50 p-3 transition-colors hover:border-primary/40">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 text-primary">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                       <Icon className="h-5 w-5" />
                     </span>
                     <div className="min-w-0">

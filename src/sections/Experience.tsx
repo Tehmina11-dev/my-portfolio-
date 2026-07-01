@@ -35,7 +35,7 @@ export function Experience() {
         className="relative mx-auto max-w-3xl"
       >
         {/* Vertical line */}
-        <div className="absolute left-5 top-2 h-full w-px bg-gradient-to-b from-primary via-accent to-transparent sm:left-1/2 sm:-translate-x-1/2" />
+        <div className="absolute left-5 top-2 h-full w-px bg-primary/30 sm:left-1/2 sm:-translate-x-1/2" />
 
         <div className="space-y-10">
           {experiences.map((item, index) => {

@@ -7,7 +7,7 @@ import type { Project } from "@/types";
 import { Badge } from "@/components/ui/Badge";
 import { fadeInUp } from "@/lib/motion";
 
-/** Premium project card with gradient cover, tech badges and hover lift. */
+/** Premium project card with a clean cover, tech badges and hover lift. */
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <motion.article
@@ -19,10 +19,8 @@ export function ProjectCard({ project }: { project: Project }) {
     >
       {/* Cover / screenshot placeholder */}
       <div className="relative aspect-[16/10] overflow-hidden">
-        <div
-          className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-90 transition-transform duration-500 group-hover:scale-105`}
-        />
-        <div className="absolute inset-0 bg-grid-pattern bg-[size:28px_28px] opacity-20" />
+        <div className="absolute inset-0 bg-slate-900 transition-transform duration-500 group-hover:scale-105" />
+        <div className="absolute inset-0 bg-grid-pattern bg-[size:28px_28px] opacity-10" />
         {/* Faux browser window for a screenshot vibe */}
         <div className="absolute inset-x-5 bottom-0 top-8 rounded-t-xl border border-white/20 bg-white/10 backdrop-blur-sm">
           <div className="flex items-center gap-1.5 border-b border-white/20 px-3 py-2">
@@ -31,7 +29,7 @@ export function ProjectCard({ project }: { project: Project }) {
             <span className="h-2.5 w-2.5 rounded-full bg-white/40" />
           </div>
           <div className="flex h-[calc(100%-2rem)] items-center justify-center px-4 text-center">
-            <span className="text-lg font-bold text-white drop-shadow">
+            <span className="text-lg font-bold text-emerald-400 drop-shadow">
               {project.title}
             </span>
           </div>
@@ -117,7 +115,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-accent px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:-translate-y-0.5"
             >
               <LuExternalLink className="h-4 w-4" />
               Live Demo

@@ -56,7 +56,7 @@ export function TypingEffect({
 
   return (
     <span className={cn("inline-flex items-center", className)} aria-live="polite">
-      <span className="text-gradient animate-gradient-x font-semibold">{text}</span>
+      <span className="text-gradient font-semibold">{text}</span>
       <span className="ml-0.5 inline-block h-[1.1em] w-[3px] animate-blink bg-primary" />
     </span>
   );

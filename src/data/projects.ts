@@ -42,7 +42,6 @@ export const projects: Project[] = [
     github: "https://github.com/Tehmina11-dev/Chat-app",
     demo: "https://ai-chat-app.vercel.app",
     featured: true,
-    gradient: "from-indigo-500 via-purple-500 to-fuchsia-500",
   },
   {
     id: "task-manager",
@@ -63,7 +62,6 @@ export const projects: Project[] = [
     github: "https://github.com/tehmina11-dev/task-manager",
     demo: "https://task-manager-demo.vercel.app",
     featured: true,
-    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
   },
   {
     id: "landing-page",
@@ -83,7 +81,6 @@ export const projects: Project[] = [
     image: "/assets/projects/landing-page.svg",
     github: "https://github.com/tehmina11-dev/landing-page",
     demo: "https://landing-page-demo.vercel.app",
-    gradient: "from-rose-500 via-pink-500 to-orange-500",
   },
   {
     id: "dashboard-app",
@@ -103,6 +100,5 @@ export const projects: Project[] = [
     image: "/assets/projects/dashboard.svg",
     github: "https://github.com/tehmina11-dev/dashboard-app",
     demo: "https://dashboard-app-demo.vercel.app",
-    gradient: "from-sky-500 via-blue-500 to-indigo-500",
   },
 ];

@@ -22,8 +22,7 @@ export function AIExperience() {
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
       >
-        <div className="absolute right-0 top-1/4 h-80 w-80 rounded-full bg-accent/15 blur-[130px]" />
-        <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-primary/15 blur-[130px]" />
+        <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-primary/10 blur-[130px]" />
       </div>
 
       <SectionHeading
@@ -31,7 +30,7 @@ export function AIExperience() {
         title={
           <>
             Working with{" "}
-            <span className="text-gradient animate-gradient-x">AI &amp; Vector Databases</span>
+            <span className="text-gradient">AI &amp; Vector Databases</span>
           </>
         }
         description="Practical, hands-on experience building intelligent features that recruiters and modern teams are looking for."
@@ -53,9 +52,9 @@ export function AIExperience() {
               whileHover={{ y: -6 }}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card/50 p-7 transition-colors hover:border-accent/50"
             >
-              <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-accent/10 blur-2xl transition-opacity duration-500 group-hover:bg-accent/20" />
+              <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-opacity duration-500 group-hover:bg-primary/20" />
 
-              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-accent text-primary-foreground shadow-glow transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
                 <Icon className="h-7 w-7" />
               </span>
 

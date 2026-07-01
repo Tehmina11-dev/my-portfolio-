@@ -19,8 +19,6 @@ export default function Image() {
           justifyContent: "center",
           padding: "80px",
           backgroundColor: "#020617",
-          backgroundImage:
-            "radial-gradient(circle at 20% 20%, #4338ca 0%, transparent 45%), radial-gradient(circle at 85% 80%, #9333ea 0%, transparent 45%)",
           color: "white",
           fontFamily: "sans-serif",
         }}
@@ -31,7 +29,7 @@ export default function Image() {
             alignItems: "center",
             gap: 16,
             fontSize: 28,
-            color: "#a5b4fc",
+            color: "#34d399",
             letterSpacing: 4,
             textTransform: "uppercase",
           }}
@@ -41,7 +39,7 @@ export default function Image() {
         <div style={{ display: "flex", fontSize: 110, fontWeight: 800, marginTop: 12 }}>
           {personal.name}
         </div>
-        <div style={{ display: "flex", fontSize: 40, fontWeight: 600, marginTop: 8, color: "#c4b5fd" }}>
+        <div style={{ display: "flex", fontSize: 40, fontWeight: 600, marginTop: 8, color: "#34d399" }}>
           Frontend &amp; Full-Stack Developer
         </div>
         <div

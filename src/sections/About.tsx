@@ -77,7 +77,7 @@ export function About() {
               whileHover={{ y: -4 }}
               className="group flex gap-4 rounded-2xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary transition-transform group-hover:scale-110">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
                 <Icon className="h-6 w-6" />
               </div>
               <div>

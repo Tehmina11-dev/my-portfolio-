@@ -54,8 +54,6 @@ export interface Project {
   github?: string;
   demo?: string;
   featured?: boolean;
-  /** Tailwind gradient classes used for the placeholder cover. */
-  gradient: string;
 }
 
 /** A card in the "Working with AI & Vector Databases" section. */

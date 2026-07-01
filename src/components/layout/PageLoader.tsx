@@ -32,7 +32,7 @@ export function PageLoader() {
             transition={{ duration: 0.4 }}
             className="relative flex h-20 w-20 items-center justify-center"
           >
-            <span className="absolute inset-0 animate-spin rounded-full border-2 border-transparent border-t-primary border-r-accent" />
+            <span className="absolute inset-0 animate-spin rounded-full border-2 border-border border-t-primary" />
             <span className="text-2xl font-bold text-gradient">
               {personal.firstName.charAt(0)}
             </span>

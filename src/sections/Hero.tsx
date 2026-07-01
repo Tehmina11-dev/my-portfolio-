@@ -21,8 +21,7 @@ export function Hero() {
       {/* Decorative background */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-grid-pattern bg-[size:44px_44px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)] opacity-40" />
-        <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-primary/25 blur-[120px]" />
-        <div className="absolute -right-10 bottom-0 h-80 w-80 rounded-full bg-accent/25 blur-[120px]" />
+        <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-primary/10 blur-[120px]" />
       </div>
 
       <div className="container grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
@@ -47,7 +46,7 @@ export function Hero() {
             variants={fadeInUp}
             className="mt-6 text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Hi, I&apos;m <span className="text-gradient animate-gradient-x">{personal.name}</span>
+            Hi, I&apos;m <span className="text-foreground">{personal.name}</span>
           </motion.h1>
 
           <motion.div

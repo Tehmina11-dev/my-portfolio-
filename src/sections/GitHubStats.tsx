@@ -37,7 +37,7 @@ export function GitHubStats() {
               className="group relative overflow-hidden rounded-2xl border border-border bg-card/50 p-7 text-center transition-colors hover:border-primary/40"
             >
               <div className="pointer-events-none absolute inset-x-0 -top-16 mx-auto h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-opacity group-hover:bg-primary/20" />
-              <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary">
+              <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <Icon className="h-6 w-6" />
               </span>
               <p className="mt-4 text-4xl font-extrabold tracking-tight">

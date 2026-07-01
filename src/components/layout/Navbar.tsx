@@ -40,7 +40,7 @@ export function Navbar() {
           className="group flex items-center gap-2 text-lg font-bold"
           aria-label="Go to top"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-primary-foreground shadow-glow">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
             {personal.firstName.charAt(0)}
           </span>
           <span className="hidden sm:inline">

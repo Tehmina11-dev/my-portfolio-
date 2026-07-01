@@ -27,22 +27,16 @@ export function HeroAvatar() {
       animate="visible"
       className="relative mx-auto hidden aspect-square w-full max-w-sm lg:block"
     >
-      {/* Glow */}
-      <div className="absolute inset-6 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl" />
+      {/* Subtle glow */}
+      <div className="absolute inset-6 rounded-full bg-primary/10 blur-3xl" />
 
-      {/* Rotating gradient ring */}
-      <motion.div
-        animate={{ rotate: 360 }}
-        transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-        className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,rgb(var(--primary)),rgb(var(--accent)),rgb(var(--primary)))] p-[2px] opacity-80"
-      >
-        <div className="h-full w-full rounded-full bg-background" />
-      </motion.div>
+      {/* Solid accent ring */}
+      <div className="absolute inset-0 rounded-full border-2 border-primary/50" />
 
       {/* Inner image placeholder */}
-      <div className="absolute inset-3 overflow-hidden rounded-full border border-border bg-gradient-to-br from-muted to-card">
+      <div className="absolute inset-3 overflow-hidden rounded-full border border-border bg-card">
         <div className="flex h-full w-full flex-col items-center justify-center">
-          <span className="bg-gradient-to-br from-primary to-accent bg-clip-text text-8xl font-black text-transparent">
+          <span className="text-8xl font-black text-primary">
             T
           </span>
           <span className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">

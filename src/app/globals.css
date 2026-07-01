@@ -12,9 +12,9 @@
     --card: 255 255 255;
     --card-foreground: 15 23 42;
     --border: 226 232 240; /* slate-200 */
-    --primary: 99 102 241; /* indigo-500 */
+    --primary: 5 150 105; /* emerald-600 */
     --primary-foreground: 255 255 255;
-    --accent: 168 85 247; /* purple-500 */
+    --accent: 5 150 105; /* emerald-600 (single accent, no gradient) */
     --accent-foreground: 255 255 255;
   }
 
@@ -27,9 +27,9 @@
     --card: 15 23 42; /* slate-900 */
     --card-foreground: 241 245 249;
     --border: 30 41 59; /* slate-800 */
-    --primary: 129 140 248; /* indigo-400 */
+    --primary: 52 211 153; /* emerald-400 */
     --primary-foreground: 2 6 23;
-    --accent: 192 132 252; /* purple-400 */
+    --accent: 52 211 153; /* emerald-400 (single accent, no gradient) */
     --accent-foreground: 2 6 23;
   }
 
@@ -86,8 +86,9 @@
     @apply container scroll-mt-24 py-20 sm:py-28;
   }
 
+  /* Kept for API compatibility — renders as a solid accent (no gradient). */
   .text-gradient {
-    @apply bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] bg-clip-text text-transparent;
+    @apply text-primary;
   }
 
   .glass-card {

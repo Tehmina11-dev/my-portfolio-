@@ -19,7 +19,7 @@ export function Footer() {
               onClick={() => scrollToSection(SECTION_IDS.hero)}
               className="flex items-center gap-2 text-xl font-bold"
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-primary-foreground">
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
                 {personal.firstName.charAt(0)}
               </span>
               {personal.firstName}

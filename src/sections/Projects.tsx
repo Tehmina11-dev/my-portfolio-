@@ -48,7 +48,7 @@ export function Projects() {
               {isActive && (
                 <motion.span
                   layoutId="project-filter-active"
-                  className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-primary to-accent"
+                  className="absolute inset-0 -z-10 rounded-full bg-primary"
                   transition={{ type: "spring", stiffness: 350, damping: 30 }}
                 />
               )}
