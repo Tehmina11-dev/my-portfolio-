@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme tokens */
+    --background: 248 250 252; /* slate-50 */
+    --foreground: 15 23 42; /* slate-900 */
+    --muted: 241 245 249; /* slate-100 */
+    --muted-foreground: 100 116 139; /* slate-500 */
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+    --border: 226 232 240; /* slate-200 */
+    --primary: 99 102 241; /* indigo-500 */
+    --primary-foreground: 255 255 255;
+    --accent: 168 85 247; /* purple-500 */
+    --accent-foreground: 255 255 255;
+  }
+
+  .dark {
+    /* Dark theme tokens (default) */
+    --background: 2 6 23; /* slate-950 */
+    --foreground: 226 232 240; /* slate-200 */
+    --muted: 15 23 42; /* slate-900 */
+    --muted-foreground: 148 163 184; /* slate-400 */
+    --card: 15 23 42; /* slate-900 */
+    --card-foreground: 241 245 249;
+    --border: 30 41 59; /* slate-800 */
+    --primary: 129 140 248; /* indigo-400 */
+    --primary-foreground: 2 6 23;
+    --accent: 192 132 252; /* purple-400 */
+    --accent-foreground: 2 6 23;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Honour users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-border;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply container scroll-mt-24 py-20 sm:py-28;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-border/70 bg-card/60 backdrop-blur-xl;
+  }
+
+  .glow-ring {
+    @apply ring-1 ring-inset ring-white/10;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Hide the native cursor only on devices with a precise pointer,
+     where the custom animated cursor is active. */
+  @media (hover: hover) and (pointer: fine) {
+    .custom-cursor-active * {
+      cursor: none !important;
+    }
+  }
+}
