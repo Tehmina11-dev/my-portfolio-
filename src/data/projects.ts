@@ -59,7 +59,7 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "PostgreSQL"],
     tags: ["Full-Stack", "Dashboard"],
     image: "/assets/projects/task-manager.svg",
-    github: "https://github.com/tehmina11-dev/task-manager",
+    github: "https://github.com/Tehmina11-dev/my-portfolio-",
     demo: "https://task-manager-demo.vercel.app",
     featured: true,
   },
